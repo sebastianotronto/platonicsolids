@@ -1,0 +1,31 @@
+\input{settings.ttt}
+
+\begin{document}
+\begin{tikzpicture}[scale=2, line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+
+\input{coord-cube.tex}
+
+% Background varying in size depending on the main figure
+\fill[color=white] (-2,-2) rectangle (2,2);
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.7]
+	(P0) -- (P1) -- (P3) -- (P2) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.3]
+	(P0) -- (P1) -- (P5) -- (P4) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.5]
+	(P0) -- (P2) -- (P6) -- (P4) -- cycle;
+
+
+\draw[very thick, draw=my-color-draw-main, dashed] (P7) -- (P6);
+\draw[very thick, draw=my-color-draw-main, dashed] (P7) -- (P5);
+\draw[very thick, draw=my-color-draw-main, dashed] (P7) -- (P3);
+
+
+\end{tikzpicture}
+\end{document}
+

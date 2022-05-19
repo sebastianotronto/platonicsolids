@@ -1,0 +1,32 @@
+
+\documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{/Applications/Inkscape.app/Contents/Resources/bin/inkscape  --without-gui  --file "/Users/antonella/Desktop/dictionary/quadrilateral/\infile" --export-plain-svg "/Users/antonella/Desktop/dictionary/quadrilateral/\outfile"}},multi=false]{standalone}
+\usepackage{pgf, tikz, mathrsfs, xcolor, amssymb}
+\usetikzlibrary{arrows}
+
+\definecolor{parisgreen}{rgb}{0.31, 0.78, 0.47}
+
+\colorlet{my-color-draw-main}{parisgreen}
+\colorlet{my-color-draw-helpline}{black}
+
+\colorlet{my-color-fill-main}{parisgreen}
+\colorlet{my-color-fill-main-mark}{white}
+
+\colorlet{my-color-node-1}{black}
+\colorlet{my-color-node-2}{black}
+
+
+\tikzset{my-draw-main/.style={draw, color=my-color-draw-main, line width=1.5mm}}
+\tikzset{my-draw-helpline/.style={draw, color=my-color-draw-helpline, line width=0.3mm}}
+
+
+\tikzset{my-fill-main/.style={fill, fill=my-color-fill-main, fill opacity=0.25}}
+\tikzset{my-fill-main-mark/.style={fill, fill=my-color-fill-main-mark, fill opacity=0.05}}
+
+\tikzset{my-mark-point-main/.style={fill, fill=my-color-draw-main, fill opacity=1}}
+\tikzset{my-mark-angle-main/.style={fill, fill=my-color-draw-main, fill opacity=1}}
+\tikzset{my-mark-line-main/.style={draw, color=my-color-draw-main, line width=1.2mm}}
+
+
+
+\tikzset{my-mark-angle-1/.style={color=my-color-mark-angle-line, very thick, fill=my-color-mark-angle-fill, fill opacity=0.5}}
+\tikzset{my-mark-line-1/.style={color=black, very thick, fill=orange, fill opacity=0.1}}

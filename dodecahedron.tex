@@ -1,0 +1,44 @@
+\input{settings.ttt}
+
+\begin{document}
+\begin{tikzpicture}[scale=2, line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+
+\input{coord-dod.tex}
+
+% Background varying in size depending on the main figure
+\fill[color=white] (-2,-2) rectangle (2,2);
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.5]
+	(P0) -- (P8) -- (P10) -- (P2) -- (P16) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.2]
+	(P4) -- (P8) -- (P10) -- (P6) -- (P17) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.5]
+	(P0) -- (P8) -- (P4) -- (P14) -- (P12) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.8]
+	(P16) -- (P0) -- (P12) -- (P1) -- (P18) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.8]
+	(P1) -- (P12) -- (P14) -- (P5) -- (P9) -- cycle;
+
+\filldraw[very thick, draw=my-color-draw-main,
+	  fill=my-color-fill-main, fill opacity = 0.5]
+	(P4) -- (P14) -- (P5) -- (P19) -- (P17) -- cycle;
+
+\draw[very thick, draw=my-color-draw-main, dashed] (P19) -- (P7) -- (P11) -- (P9);
+\draw[very thick, draw=my-color-draw-main, dashed] (P7) -- (P15) -- (P6);
+\draw[very thick, draw=my-color-draw-main, dashed] (P15) -- (P13) -- (P2);
+\draw[very thick, draw=my-color-draw-main, dashed] (P13) -- (P3) -- (P18);
+\draw[very thick, draw=my-color-draw-main, dashed] (P3) -- (P11);
+
+
+\end{tikzpicture}
+\end{document}
+
